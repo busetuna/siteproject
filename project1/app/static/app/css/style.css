@@ -13,12 +13,96 @@
       color: rgba(112,128,144, 0.7);
   }
   .navbar-nav .nav-link:hover {
-      color: #717081; /* Hover (üzerine gelindiğinde) rengi geri getirir */
+      color: #7b7a8d; /* Hover (üzerine gelindiğinde) rengi geri getirir */
     }
     .center-bold {
       font-weight: bold;
       text-align: center;
       font-family: monospace;
-      font-size: 50px;
-      color : rgba(112,128,144, 0.7);
+      font-size: 35px;
+      color: #7b7a8d;
     }
+    
+    .image-container {
+      position: relative;
+      width: 100%;
+    }
+    
+    .image-container img {
+      width: 100%;
+      height: 350px;
+      display: block;
+    }
+    
+    .image-container .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+    
+    .image-container:hover .overlay {
+      opacity: 1;
+    }
+    
+
+    .card {
+      border: none;
+      padding: 0;
+      margin: 0;
+    }
+    .space-between {
+      margin-bottom: 150px; /* Divlerin arasına 20px boşluk ekler */
+    }
+    .custom-card {
+      width: 100px; /* Kartın genişliğini belirleyin */
+      height: 100px; /* Kartın yüksekliğini belirleyin */
+      border: 1px solid #ccc; /* Kartın sınırını ekleyin */
+      border-radius: 9px; /* Kartın köşelerine yuvarlaklık ekleyin */
+      overflow: hidden; /* Kart içeriğinin sınırlarını belirleyin */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Kartın gölgesini ekleyin */
+      margin-bottom: 20px;
+    }
+    
+    .custom-card-img {
+      width: 100%; /* Resmin kartın genişliğine tam olarak yayılmasını sağlar */
+      height: 100%; /* Resmin kartın yüksekliğinin 60%'ını ayarlar */
+      object-fit: cover; /* Resmin kartın boyutlarına sığdırılmasını sağlar */
+    }
+    
+    .custom-card-body {
+      padding: 20px; 
+      display: flex;
+  align-items: center; /* Dikey hizalama */
+  justify-content: center; /* Yatay hizalama */
+  text-align: center; /* Metni ortala *//* Kartın içeriğinin iç kenar boşluğunu belirleyin */
+    }
+    
+    .custom-card-title {
+      font-size: 1.5rem; /* Kart başlığının font boyutunu ayarlayın */
+      margin-bottom: 10px; /* Başlık ile metin arasındaki boşluğu belirleyin */
+    }
+    
+    .custom-card-text {
+      font-size: 1rem; /* Kart metninin font boyutunu ayarlayın */
+      line-height: 1.4; /* Satır aralığını ayarlayın */
+    }
+    
+.col-md-4 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+    
+    
+ 
+    
+    
