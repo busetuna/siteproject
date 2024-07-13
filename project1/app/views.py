@@ -6,8 +6,6 @@ def index(request):
 def references(request):
     return render(request, 'references.html')
 
-def contact(request):
-    return render(request, 'contact.html')
 
 def language(request):
     return render(request, 'language.html')
@@ -20,3 +18,9 @@ def kalite(request):
 
 def misyon_ve_vizyon(request):
     return render(request, 'misyon_ve_vizyon.html')
+
+def hizmetler(request):
+    return render(request, 'hizmetler.html')
+
+def urunler(request):
+    return render(request , 'urunler.html')
