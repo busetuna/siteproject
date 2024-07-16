@@ -1,3 +1,7 @@
+body {
+  background-color: #f0f8ff; /* Arka plan rengini değiştirmek için */
+}
+
 .bg-custom {
     background-color: #F5F5F5 !important;
   }
@@ -102,7 +106,26 @@
   justify-content: center;
 }
     
-    
- 
-    
-    
+.custom-card1 {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.custom-table {
+  width: 600px; /* Tablonun genişliği */
+  border-collapse: collapse; /* Kenarlıkların birleştirilmesi */
+  margin: 20px auto; /* Tabloyu ortalamak için */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Kenar gölgesi */
+  border: 2px solid #b95a5a; /* Tablo çerçevesi */
+}
+.custom-table th, .custom-table td {
+  border: 1px solid #b95a5a; /* Hücre kenarlıkları */
+  padding: 10px; /* İç boşluk */
+  text-align: center; /* Metnin hücre içinde ortalanması */
+}
+.custom-table th {
+  background-color: #f2f2f2; /* Başlık arka plan rengi */
+}
+
+

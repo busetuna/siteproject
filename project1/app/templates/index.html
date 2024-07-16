@@ -6,8 +6,16 @@ Anasayfa
 
 {% block css_files %}
 <link rel="stylesheet" type="text/css" href="{% static 'app/css/style.css' %}">
-{% endblock %}
-
-{% block content %}
 {% endblock  %}
 
+{% block content %}
+{% include "partials/_nav.html" %}
+{% include "partials/_slider.html" %}
+
+{% include "partials/_card.html" %}
+{% include "partials/_description.html" %}
+{% include "partials/_hizmetler.html" %}
+{% endblock %}
+{% block js_files %}
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+{% endblock %}
